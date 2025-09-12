@@ -4,99 +4,240 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DietCraft by Chitwan – Personalized Nutrition & Fitness Coaching</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
       color: #333;
-      background: #fafafa;
+      background: #f9faf9;
     }
     header {
-      background: #2e7d32;
+      background: linear-gradient(135deg, #2e7d32, #60ad5e);
       color: #fff;
-      padding: 20px;
+      padding: 60px 20px 80px;
       text-align: center;
+      position: relative;
+    }
+    header img {
+      width: 80px;
+      margin-bottom: 20px;
     }
     header h1 {
       margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+    header .cta {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background: #1b5e20;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    header .cta:hover {
+      background: #144d18;
     }
     nav {
-      background: #1b5e20;
-      padding: 10px;
+      background: #ffffff;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       text-align: center;
     }
     nav a {
-      color: #fff;
-      margin: 0 15px;
+      display: inline-block;
+      margin: 0 20px;
+      padding: 15px 0;
+      color: #2e7d32;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.2s;
+    }
+    nav a:hover {
+      color: #144d18;
     }
     section {
-      padding: 40px 20px;
-      max-width: 900px;
+      padding: 60px 20px;
+      max-width: 1000px;
       margin: auto;
     }
-    .cta {
+    section h2 {
+      text-align: center;
+      color: #2e7d32;
+      margin-bottom: 40px;
+    }
+    .programs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #d9ead3;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      color: #1b5e20;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .testimonials {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .testimonial {
+      background: #e8f5e9;
+      border-left: 4px solid #2e7d32;
+      padding: 15px 20px;
+      border-radius: 6px;
+    }
+    .testimonial p {
+      margin: 0;
+      font-style: italic;
+    }
+    .testimonial .client {
+      margin-top: 5px;
+      font-weight: bold;
+      color: #1b5e20;
+    }
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
       background: #2e7d32;
       color: #fff;
-      padding: 15px 25px;
-      text-align: center;
-      display: inline-block;
-      border-radius: 5px;
       text-decoration: none;
-      margin-top: 20px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .contact a:hover {
+      background: #144d18;
     }
     footer {
-      background: #eee;
-      color: #666;
+      background: #f1f1f1;
+      color: #555;
       text-align: center;
       padding: 20px;
       margin-top: 40px;
+      font-size: 0.9rem;
+    }
+    @media(max-width: 768px){
+      .programs {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>DietCraft by Chitwan</h1>
-    <p>Personalized Nutrition & Fitness Coaching</p>
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#programs">Programs</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header>
+  <img src="https://via.placeholder.com/80?text=Logo" alt="DietCraft Logo">
+  <h1>DietCraft by Chitwan</h1>
+  <p>Personalized Nutrition & Fitness Coaching</p>
+  <a href="https://www.instagram.com/chitwangarg/" target="_blank" class="cta">Join Us on Instagram</a>
+</header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      DietCraft by Chitwan offers personalized nutrition and fitness coaching designed to help you achieve your health goals in a sustainable way. 
-      With a focus on balanced diets and practical routines, we ensure you stay consistent and motivated.
-    </p>
-  </section>
+<nav>
+  <a href="#about">About</a>
+  <a href="#programs">Programs</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section id="programs">
-    <h2>Our Programs</h2>
-    <ul>
-      <li>💪 Weight Loss & Fat Management</li>
-      <li>🍎 Gut Health & Lifestyle Coaching</li>
-      <li>⚡ PCOS & Hormonal Balance Programs</li>
-      <li>🥗 Muscle Gain & Strength Training Nutrition</li>
-      <li>🌍 Plans for India & International Clients</li>
-    </ul>
-    <a href="https://www.instagram.com/chitwangarg/" target="_blank" class="cta">Join Us on Instagram</a>
-  </section>
+<section id="about">
+  <h2>About Us</h2>
+  <p style="text-align:center; max-width:800px; margin:auto;">
+    DietCraft by Chitwan offers personalized nutrition and fitness coaching to help you achieve your health goals in a sustainable way. 
+    With science-based plans and practical routines, we make sure you stay consistent and motivated.
+  </p>
+</section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:dietcraftbychitwan@gmail.com">contact@dietcraft.in</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/chitwangarg/" target="_blank">@chitwangarg</a></p>
-  </section>
+<section id="programs">
+  <h2>Our Programs</h2>
+  <div class="programs">
+    <div class="card">
+      <h3>💪 Weight Loss & Fat Management</h3>
+      <p>Customized plans to reduce fat, boost metabolism, and maintain a healthy weight.</p>
+    </div>
+    <div class="card">
+      <h3>🍎 Gut Health & Lifestyle</h3>
+      <p>Improve digestion, reduce bloating, and build a strong gut foundation.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ PCOS & Hormonal Balance</h3>
+      <p>Nutrition and lifestyle plans to support hormonal health and overall wellbeing.</p>
+    </div>
+    <div class="card">
+      <h3>🥗 Muscle Gain & Strength</h3>
+      <p>Structured nutrition to build lean muscle and enhance physical strength.</p>
+    </div>
+    <div class="card">
+      <h3>🌍 India & International Plans</h3>
+      <p>Tailored programs for clients anywhere, with guidance and support remotely.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 DietCraft. All Rights Reserved.</p>
-  </footer>
+<section id="testimonials">
+  <h2>Client Testimonials</h2>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>"Chitwan’s plan helped me finally lose weight without starving myself. Highly recommend!"</p>
+      <div class="client">- Ananya R.</div>
+    </div>
+    <div class="testimonial">
+      <p>"My gut issues improved drastically after following DietCraft’s guidance. Truly life-changing!"</p>
+      <div class="client">- Rohit S.</div>
+    </div>
+    <div class="testimonial">
+      <p>"The personalized coaching made sticking to a plan easy and sustainable. Amazing support!"</p>
+      <div class="client">- Priya M.</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact">
+    <a href="mailto:contact@dietcraft.in">Email</a>
+    <a href="https://www.instagram.com/chitwangarg/" target="_blank">Instagram</a>
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank">WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 DietCraft. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
